@@ -28,9 +28,7 @@ endfunction
 
 Plug 'tpope/vim-sensible'
 Plug 'rking/ag.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'Shougo/unite.vim'
-Plug 'chriskempson/base16-vim'
+Plug 'Shougo/unite.vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'mhinz/vim-startify'
 Plug 'airblade/vim-gitgutter'
@@ -116,3 +114,11 @@ let g:haskellmode_completion_ghc = 0
 let g:ghc = "stack ghc"
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
+""" neomake
+autocmd! BufWritePost,BufEnter * Neomake
+
+""" Unite
+nnoremap <c-t> :Unite -start-insert file_rec/async<cr>
+nnoremap <c-p> :Unite -start-insert file_rec/async<cr>
+nnoremap <c-b> :Unite -no-start-insert buffer<cr>
+nnoremap <c-g> :Unite grep:.<cr>
