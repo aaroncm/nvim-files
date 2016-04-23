@@ -38,6 +38,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'Shougo/vimproc.vim'
 Plug 'Shougo/deoplete.nvim', {'do': function('BuildDeoplete')}
